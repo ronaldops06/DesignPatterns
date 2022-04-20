@@ -15,32 +15,32 @@ Preciso delegar a responsabilidade para que as subclasses especifiquem os objeto
 Fornece uma interface para criar famílias de objetos relacionados ou dependentes sem especificar suas classes concretas.
 ### Classes e objetos que participam desse padrão:
 - AbstractFactory:
-Declara uma interface para operações que criam produtos abstratos.
+  - Declara uma interface para operações que criam produtos abstratos.
 - ConcreteFactory:
-Implementa as operações para criar objetos de produtos concretos.
+  - Implementa as operações para criar objetos de produtos concretos.
 - AbstractProdut:
-Declara uma interface para um tipo de objeto de produto.
+  - Declara uma interface para um tipo de objeto de produto.
 - Produto:
-Usa interfaces declaradas pelas classes AbstractFactory e AbstractProduct.
+  - Usa interfaces declaradas pelas classes AbstractFactory e AbstractProduct.
 
 ## Builder
 Separa a construção de um objeto complexo de sua representação para que o mesmo processo de construção possa criar diferentes representações.
 ### Classes e objetos que participam desse padrão:
 - Construtor:
-Especifica uma interface abstrata para criar partes de um objeto produto.
+  - Especifica uma interface abstrata para criar partes de um objeto produto.
 - ConcrecteBuilder:
-Constrói e monta partes do produto implementando a interface do Construtor; Define e acompanha a representação que cria; e, fornece uma interface para recuperar o produto.
+  - Constrói e monta partes do produto implementando a interface do Construtor; Define e acompanha a representação que cria; e, fornece uma interface para recuperar o produto.
 - Diretor:
-Constrói um objeto usando a interface do construtor.
+  - Constrói um objeto usando a interface do construtor.
 - Produto:
-Representa o objeto complexo em construção.
+  - Representa o objeto complexo em construção.
 
 ## Prototype
 Especifique o tipo de objetos a criar usando uma instância prototípica e crie novos objetos copiando esse protótipo.
 ### Classes e objetos que participam desse padrão:
 - Protótipo:
-Declara uma interface para ser clonada.
+  - Declara uma interface para ser clonada.
 - Protótipo de Concreto:
-Implementa uma operação para ser clonada.
+  - Implementa uma operação para ser clonada.
 - Cliente:
-Cria um novo objeto pedindo a um protótipo para ser clonado.
+  - Cria um novo objeto pedindo a um protótipo para ser clonado.
